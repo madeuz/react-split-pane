@@ -23,9 +23,11 @@ export type SplitPaneProps = {
   paneStyle?: React.CSSProperties;
   pane1Style?: React.CSSProperties;
   pane2Style?: React.CSSProperties;
+  pane1ClassName?: string;
+  pane2ClassName?: string;
   resizerClassName?: string;
   step?: number;
-  children?: React.ReactNode;
+  children?: React.ReactNode | React.ReactNode[];
 };
 
 export type SplitPaneState = {
